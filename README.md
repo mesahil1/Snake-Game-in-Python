@@ -1,35 +1,45 @@
-This is a Snake Game available in both Python3 and Web Browser versions.
+# Snake Game in Python
 
-## Web Browser Version (Recommended)
-Open `index.html` in any modern web browser or serve it using a simple HTTP server:
+A browser-based Snake game that runs from a single Python file without any external dependencies.
 
-```bash
-python3 -m http.server 8000
-```
+## How to Run
 
-Then visit `http://localhost:8000` in your browser.
+Simply run the Python script to start the web server:
 
-**Web Version Features:**
-- Runs in any modern web browser
-- No installation required
-- Responsive design
-- Same gameplay as Python version
-
-## Python Version
-First install the required libraries:
-```bash
-pip install -r requirements.txt
-```
-
-Then run the script:
 ```bash
 python3 snake.py
 ```
 
+This will:
+- Start a local web server on port 8000
+- Automatically open the game in your default browser
+- Serve the Snake game at `http://localhost:8000`
+
+No installation of external libraries is required! The game uses only Python's built-in modules.
+
 ## How to Play
-- Use arrow keys to control the snake
-- Eat the green food to grow and increase your score
-- Avoid hitting the walls or yourself
-- Press 'R' to restart when game over (web version)
-- Press 'C' to restart when game over (Python version)
+
+- **Arrow Keys**: Control the snake's movement
+- **Objective**: Eat the green food to grow and increase your score
+- **Avoid**: Hitting the walls or the snake's own body
+- **Game Over**: Press 'R' to restart or 'Q' to quit
+
+## Features
+
+- **Self-contained**: Everything embedded in a single Python file
+- **No dependencies**: Uses only Python standard library
+- **Browser-based**: Runs in any modern web browser
+- **Responsive**: Clean, responsive design
+- **Faithful gameplay**: Maintains the classic Snake game mechanics
+
+## Technical Details
+
+The game is implemented as:
+- A Python HTTP server using `http.server` and `socketserver`
+- HTML5 Canvas for rendering
+- JavaScript for game logic and user input
+- CSS for styling
+- All content embedded directly in the Python file
+
+Press `Ctrl+C` in the terminal to stop the server when done playing.
 
