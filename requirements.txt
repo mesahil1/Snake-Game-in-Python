@@ -1,1 +1,2 @@
-pygame==2.6.0
+# No external dependencies required
+# The Snake game now runs as a web server using Python's built-in modules
